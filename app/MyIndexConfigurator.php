@@ -9,6 +9,8 @@ class MyIndexConfigurator extends IndexConfigurator
 {
     use Migratable;
 
+    protected $name = 'faq';
+
     protected $settings = [
         //
     ];

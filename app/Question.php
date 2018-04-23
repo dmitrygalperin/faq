@@ -4,11 +4,13 @@ namespace App;
 
 use ScoutElastic\Searchable;
 use Illuminate\Database\Eloquent\Model;
+use \Conner\Tagging\Taggable;
 
 class Question extends Model
 {
 
     use Searchable;
+    use Taggable;
 
     protected $indexConfigurator = MyIndexConfigurator::class;
 
